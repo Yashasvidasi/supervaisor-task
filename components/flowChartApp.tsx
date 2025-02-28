@@ -62,7 +62,7 @@ export default function FlowChartApp() {
       setPast(prevPast => [...prevPast, flowData])
       setFuture([])
     }
-  }, [flowData])
+  }, [flowData, past])
 
   useEffect(() => {
     localStorage.setItem("flowChartData", JSON.stringify({ current: flowData, past, future }))
