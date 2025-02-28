@@ -1,5 +1,4 @@
 
-
 ## Overview
 
 This repository contains a data structure for representing a hierarchical flow chart with relationships between nodes. The structure is designed to model a multi-step process (like a project lifecycle) with nodes, sub-nodes, and various types of relationships between them.
@@ -147,3 +146,8 @@ The data structure can be extended by:
 2. Creating new relationship types
 3. Adding more steps to represent a more complex process
 4. Implementing filtering or grouping mechanisms based on node properties
+
+
+## SETUP
+1. git clone this repository
+2. npm install or yarn install
