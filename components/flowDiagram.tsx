@@ -66,7 +66,6 @@ export default function FlowDiagram() {
 
   // State for tracking selected node and its label
   const [selectedNode, setSelectedNode] = useState<string | null>(null)
-  const [nodeName, setNodeName] = useState("")
 
   /**
    * Handles new connections between nodes.
@@ -117,9 +116,8 @@ export default function FlowDiagram() {
    * @param _ - Mouse event (not used)
    * @param node - The clicked node object
    */
-  const onNodeClick = useCallback((_: React.MouseEvent, node: any) => {
+  const onNodeClick = useCallback((_: React.MouseEvent, node:{id:string}) => {
     setSelectedNode(node.id)
-    setNodeName(node.data.label)
   }, [])
 
   /**
